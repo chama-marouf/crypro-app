@@ -10,9 +10,21 @@ const Stack = createStackNavigator();
 const Navigation = () => (
   <NavigationContainer>
     <Stack.Navigator initialRouteName="Biometric">
-      <Stack.Screen name="Biometric" component={BiometricScreen} />
-      <Stack.Screen name="MarketOverview" component={MarketOverviewScreen} />
-      <Stack.Screen name="CoinDetails" component={CoinDetailsScreen} />
+      <Stack.Screen
+        options={{headerShown: false}}
+        name="Biometric"
+        component={BiometricScreen}
+      />
+      <Stack.Screen
+        options={{headerShown: false}}
+        name="MarketOverview"
+        component={MarketOverviewScreen}
+      />
+      <Stack.Screen
+        options={{headerShown: false}}
+        name="CoinDetails"
+        component={CoinDetailsScreen}
+      />
     </Stack.Navigator>
   </NavigationContainer>
 );
